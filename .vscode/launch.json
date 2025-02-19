@@ -1,0 +1,46 @@
+{
+    // Pro informace o možných atributech použijte technologii IntelliSense.
+    // Umístěním ukazatele myši zobrazíte popisy existujících atributů.
+    // Další informace najdete tady: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'cosmic-classic-menu'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=cosmic-classic-menu",
+                    "--package=cosmic-classic-menu"
+                ],
+                "filter": {
+                    "name": "cosmic-classic-menu",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'cosmic-classic-menu'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=cosmic-classic-menu",
+                    "--package=cosmic-classic-menu"
+                ],
+                "filter": {
+                    "name": "cosmic-classic-menu",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

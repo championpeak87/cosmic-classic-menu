@@ -5,15 +5,17 @@ Summary:        Cosmic Classic Menu Application
 
 License:        MIT
 URL:            https://example.com/cosmic-classic-menu
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  rust
 BuildRequires:  cargo
+Requires:       some-dependency
 
 %description
 Cosmic Classic Menu is a Rust-based application for managing cosmic menus.
 
 %prep
-%setup -q
+%autosetup
 
 %build
 cargo build --release
