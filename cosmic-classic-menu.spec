@@ -9,6 +9,7 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  rust
 BuildRequires:  cargo
+BuildRequires:  rust-xkbcommon-devel
 Requires:       some-dependency
 
 %description
