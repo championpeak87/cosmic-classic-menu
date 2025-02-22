@@ -1,5 +1,5 @@
 Name:           cosmic-classic-menu
-Version:        1.0.1
+Version:        1.0.3
 Release:        1%{?dist}
 Summary:        Cosmic Classic Menu Application
 
@@ -28,6 +28,13 @@ install -D -m 0755 target/release/%{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Feb 22 2025 Kamil Lihan <k.lihan@outlook.com> 1.0.3-1
+- new package built with tito
+
+* Sat Feb 22 2025 Kamil Lihan <k.lihan@outlook.com>
+- Update cosmic-classic-menu.spec
+  (32168403+championpeak87@users.noreply.github.com)
+
 * Wed Feb 19 2025 Kamil Lihan <k.lihan@outlook.com> 1.0.1-1
 - new package built with tito
 
