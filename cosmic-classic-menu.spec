@@ -1,10 +1,10 @@
 Name:           cosmic-classic-menu
 Version:        0.0.2
 Release:        1%{?dist}
-Summary:        COSMIC Classic Menu applet
+Summary:        Cosmic Classic Menu Application
 
-License:        GPLv2
-URL:            https://github.com/championpeak87/cosmic-classic-menu.git
+License:        MIT
+URL:            https://example.com/cosmic-classic-menu
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  rust
@@ -13,7 +13,7 @@ BuildRequires:  rust-xkbcommon-devel
 Requires:       cosmic-osd
 
 %description
-COSMIC Classic Menu is a Rust-based applet for COSMIC Desktop
+Cosmic Classic Menu is a Rust-based application for managing cosmic menus.
 
 %prep
 %autosetup
@@ -28,4 +28,10 @@ cp data/com.championpeak87.cosmic-classic-menu.desktop /usr/share/applications
 
 %files
 %{_bindir}/%{name}
-/usr/share/applications/com.championpeak87.cosmic-classic-menu.desktop
+
+%changelog
+* Sun Feb 23 2025 Kamil Lihan <k.lihan@outlook.com> 0.0.2-1
+- Initial preview version
+
+* Wed Feb 19 2025 Kamil Lihan <k.lihan@outlook.com> - 0.0.1
+- Initial package
