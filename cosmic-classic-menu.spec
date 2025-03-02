@@ -1,5 +1,5 @@
 Name:           cosmic-classic-menu
-Version:        0.0.2
+Version:        0.0.3
 Release:        1%{?dist}
 Summary:        Cosmic Classic Menu Application
 
@@ -28,8 +28,13 @@ cp data/com.championpeak87.cosmic-classic-menu.desktop /usr/share/applications
 
 %files
 %{_bindir}/%{name}
+/usr/share/applications/com.championpeak87.cosmic-classic.menu.desktop
 
 %changelog
+* Sun Mar 02 2025 Kamil Lihan <k.lihan@outlook.com> 0.0.3-1
+- Automatic commit of package [cosmic-classic-menu] release [0.0.2-1].
+  (k.lihan@outlook.com)
+
 * Sun Feb 23 2025 Kamil Lihan <k.lihan@outlook.com> 0.0.2-1
 - Initial preview version
 
